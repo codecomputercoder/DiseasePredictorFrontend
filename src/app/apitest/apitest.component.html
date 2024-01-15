@@ -1,0 +1,22 @@
+
+<h2>Select the symptoms you are experiencing</h2>
+<div class="checkbox-grid">
+  <div *ngFor="let symptom of symptoms" class="checkbox-item">
+      <label>
+          <input type="checkbox" [checked]="isSelected(symptom)" (change)="updateSelectedSymptoms(symptom)" />
+          {{ symptom.name }}
+      </label>
+  </div>
+</div>
+
+
+  <!-- <button (click)="generateString()">Generate String</button> -->
+  
+  <h3> Your Selected Symptoms: {{ selectedSymptomsString }}</h3>
+  
+<button (click)="testResult()">Get Result</button>
+
+<div>
+  <h2>Result:
+  {{ resultData }}</h2>
+</div>
