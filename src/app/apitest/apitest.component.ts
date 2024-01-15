@@ -15,7 +15,7 @@ export class ApitestComponent {
 resultData: string="Click to View";
 
   constructor(private httpClient: HttpClient){}
-  private url = 'https://diseasepredictorbackend.onrender.com/';
+  private url = 'https://diseasepredictorbackend.onrender.com';
 
 
 
